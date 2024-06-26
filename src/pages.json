@@ -1,0 +1,70 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/Outpatient",
+			"style": {
+                // #ifdef H5
+                "navigationStyle": "custom",
+				// #endif
+                "navigationBarTitleText": "门诊"
+			}
+        },
+        {
+			"path": "pages/home/InHospital",
+			"style": {
+                // #ifdef H5
+                "navigationStyle": "custom",
+				// #endif
+                "navigationBarTitleText": "住院"
+			}
+        },
+        {
+			"path": "pages/home/My",
+			"style": {
+                // #ifdef H5
+                "navigationStyle": "custom",
+				// #endif
+                "navigationBarTitleText": "我的"
+			}
+        }
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8"
+	},
+    "tabBar": {
+		"color": "#333333",
+		"selectedColor": "#299ff7",
+        "backgroundColor": "#FFFFFF",
+		"list": [
+			{
+				"pagePath": "pages/home/Outpatient",
+				"text": "门诊",
+				"iconPath": "static/image/icon_58.png",
+				"selectedIconPath": "static/image/icon_60.png"
+			},
+			{
+				"pagePath": "pages/home/InHospital",
+				"text": "住院",
+				"iconPath": "static/image/icon_50.png",
+				"selectedIconPath": "static/image/icon_54.png"
+			},
+			{
+				"pagePath": "pages/home/My",
+				"text": "我的",
+				"iconPath": "static/image/icon_52.png",
+				"selectedIconPath": "static/image/icon_56.png"
+			}
+		]
+	},
+    "easycom": {
+		"autoscan": true,
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+	        "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	}
+}
