@@ -4,7 +4,7 @@ import {computed, ref} from "vue";
 
 
 export const useUserStore = defineStore('user', () => {
-    const initData = {userName: ''};
+    const initData = {userName: '', synKey: ''};
     const state = ref(jsCopyObj(initData));
 
     const setData = (data?: typeof state.value) => {

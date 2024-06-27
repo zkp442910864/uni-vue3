@@ -28,6 +28,22 @@
 			}
         }
 	],
+    "subPackages": [
+        {
+            "root": "pages/registration",
+            "pages": [
+                {
+                    "path": "Registration",
+                    "style": {
+                        // #ifdef H5
+                        "navigationStyle": "custom",
+                        // #endif
+                        "navigationBarTitleText": "科室选择"
+                    }
+                }
+            ]
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

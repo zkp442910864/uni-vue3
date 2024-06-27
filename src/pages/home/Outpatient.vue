@@ -29,13 +29,13 @@ const quickEntry1 = [
     {
         text: '当日挂号',
         text2: '当日挂号新体验',
-        url: '/pages/registration/index?type=0',
+        url: '/pages/registration/Registration?type=0',
         imgUrl: image.icon_68,
     },
     {
         text: '预约挂号',
         text2: '预约挂号新体验',
-        url: '/pages/registration/index?type=2',
+        url: '/pages/registration/Registration?type=2',
         imgUrl: image.icon_68,
     },
 ];

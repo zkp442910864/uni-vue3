@@ -41,5 +41,5 @@ const api: Record<string, any> = {};
     }
 });
 
-console.log(api);
+// console.log(api);
 // #endif
